@@ -1,0 +1,11 @@
+schemaVersion: 2.2.0
+attributes:
+  space:
+    instanceType: regular
+    editor:
+      type: Rider
+components:
+- name: unity-container
+  container:
+    # image from Docker Hub
+    image: unity-ci/editor
