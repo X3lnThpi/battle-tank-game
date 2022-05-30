@@ -1,17 +1,21 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &4086399293796796302
-MonoBehaviour:
+--- !u!54 &6957964724531594028
+Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3263608114651602675}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84a4c6fcfc439a443b2f855ca164ec54, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!65 &7203755529496637779
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25,6 +29,75 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.15, y: 1.8, z: 2.76}
   m_Center: {x: 0, y: 0.91, z: 0}
+--- !u!114 &-5033344753042360958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3263608114651602675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f33cc1e9d73f0724b8b61aa92e0fd6d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tankType: 1
+  patrollingState: {fileID: 4308756833468982796}
+  chasingState: {fileID: -943596697841628836}
+  tankStates: []
+  startingState: {fileID: 4308756833468982796}
+--- !u!114 &-943596697841628836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3263608114651602675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28e425206aee74540b9b0678f039fa2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: {r: 1, g: 0.43164754, b: 0, a: 0}
+  differentColor: {r: 1, g: 0, b: 0, a: 0}
+--- !u!114 &1375221737871494748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3263608114651602675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee12282a4959249438b7a963dfcc53fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: {r: 0, g: 1, b: 0.5515652, a: 0}
+--- !u!114 &4086399293796796302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3263608114651602675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84a4c6fcfc439a443b2f855ca164ec54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4308756833468982796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3263608114651602675}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1b8c0a15a315824dae5e3ca149be051, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: {r: 0, g: 0.306108, b: 1, a: 0}
 --- !u!1001 &3263608114651699683
 PrefabInstance:
   m_ObjectHideFlags: 0
