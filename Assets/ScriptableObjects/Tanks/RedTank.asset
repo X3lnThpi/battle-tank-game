@@ -14,5 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TankType: 1
   TankName: RedSmallTank
-  Speed: 200
+  Speed: 9
   Health: 50
+  bulletType: 0
+  minLaunchForce: 0
+  maxLaunchForce: 0
+  maxChargeTime: 0
